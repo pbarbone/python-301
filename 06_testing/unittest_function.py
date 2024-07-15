@@ -10,3 +10,7 @@
 # Keep in mind that you will run into an error when you'll attempt to import
 # this file, because Python modules can't begin with a number.
 # You can rename the file to make it work :)
+
+def convert_to_celsius(fahrenheit):
+    '''Convert Fahrenheit to Celsius.'''
+    return (fahrenheit - 32) * 5/9

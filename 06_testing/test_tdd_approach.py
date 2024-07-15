@@ -9,3 +9,20 @@
 #
 # You do not need to implement the actual functions after writing the tests 
 # but of course you can do that, too.
+
+import unittest
+import tdd_approach
+
+class TestTddApproach(unittest.TestCase):
+    ''' Test cases for tdd_approach, using translate library to convert english to Russian'''
+    # translate can successfully translate use the geneitive case
+    def test_translate_genitive(self):
+        phrase = 'I have a cat'
+        expected = 'У меня есть кот'
+        result = tdd_approach.translate(phrase)
+        self.assertEqual(result, expected)
+    
+
+if __name__ == '__main__':
+    unittest.main()
+
